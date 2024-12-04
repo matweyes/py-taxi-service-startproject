@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
+    env:
+      SECRET_KEY: "django-insecure-+oz)3-)km3^=5lda_)lz-ph$dcd$%n764eu7!6idnefjp@j#t@"
+      DEBUG: "False"
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
